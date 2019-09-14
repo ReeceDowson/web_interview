@@ -1,0 +1,17 @@
+server:
+  session:
+    timeout: 1800
+
+spring: 
+  application: 
+    name: demo-consumer
+  devtools:
+    livereload:
+      port: 35730
+  http: 
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+
+swagger:
+  paths: /user/.*
